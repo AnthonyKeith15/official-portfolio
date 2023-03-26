@@ -22,6 +22,7 @@ li.social-media-item {
  list-style: none;
  height: 35px;
  width: 35px;
+ fill: gray;
 }
 
 svg{
@@ -30,8 +31,13 @@ svg{
 }
 
 path {
-  fill: gray
+  height: 100%;
+  fill: inherit
+}
+path:hover{
+  fill: inherit;
 }
 li.social-media-item:hover{
   cursor: pointer;
+  fill: red
 }

@@ -1,14 +1,18 @@
 import './App.css';
-import { Route, Routes, Link } from 'react-router-dom';
+// import { Route, Routes, Link } from 'react-router-dom';
 import { Home } from './pages/Home';
-import { Projects } from './pages/Projects';
+// import { Projects } from './pages/Projects';
 import { Socials } from './Socials';
 
 function App() {
   return (
     <>
       <div className="grounded-radiants">
+        <nav>
+          
         <Socials/ >
+        </nav>
+        <Home />
       {/* <nav>
       <ul>
         <li>
@@ -19,10 +23,10 @@ function App() {
         </li>
         </ul>
     </nav> */}
-        <Routes>
+        {/* <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-        </Routes>
+        </Routes> */}
       </div>
 
 

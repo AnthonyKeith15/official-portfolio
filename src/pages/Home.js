@@ -1,8 +1,18 @@
-import { Route, Routes } from "react-router-dom";
+import './Home.css'
 
 export function Home() {
   return(
-    <h1>Home</h1>
+    <>
+    <main>
+    <h1>Hello There!</h1>
+    <p>
+      lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+      lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+      lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+      lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+    </p>
+    </main>
+    </>
   )
 }
 
