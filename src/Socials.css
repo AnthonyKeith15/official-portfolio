@@ -12,6 +12,8 @@ ul{
   text-decoration: none;
   display: flex;
   padding: 0 1rem;
+  margin-right: 2rem;
+
 }
 
 .nav a {
@@ -22,6 +24,9 @@ li.social-media-item {
  list-style: none;
  height: 35px;
  width: 35px;
+ fill: gray;
+ transition: all .5s ease-in-out;
+
 }
 
 svg{
@@ -30,8 +35,13 @@ svg{
 }
 
 path {
-  fill: gray
+  height: 100%;
+  fill: inherit
 }
+
 li.social-media-item:hover{
   cursor: pointer;
+  transform: scale(1.3);
+
+
 }
