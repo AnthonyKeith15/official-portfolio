@@ -1,7 +1,7 @@
-import { NavLink, useMatch, useResolvedPath } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './PageSelector.css';
 
-export function PageSelector(to) {
+export function PageSelector() {
   return (
     <>
       <ul className='page-selector'>
@@ -13,6 +13,8 @@ export function PageSelector(to) {
           Projects
         </NavLink>
       </ul >
+       
+     
     </>
   )
 }

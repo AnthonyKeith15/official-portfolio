@@ -2,18 +2,10 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  text-decoration: none;
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
-}
-
-ul{
-  list-style: none;
-  text-decoration: none;
-  display: flex;
-  padding: 0 1rem;
-  margin-right: 2rem;
-
 }
 
 .nav a {

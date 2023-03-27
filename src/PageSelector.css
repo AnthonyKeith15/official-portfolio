@@ -2,11 +2,18 @@
 .page-selector {
   margin-top: 2rem;
   margin-left: auto;
-  gap: 2rem;
   font-size: 2.1rem;
   transform: translateY(125%);
   color: inherit;
   scale: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+}
+
+ul.page-selector {
+  text-align: center;
 }
 
 .button{
@@ -23,4 +30,11 @@
 
 .button.active {
   border-bottom: 1px solid red;
+}
+
+aside{
+  position: relative;
+  width: fit-content;
+  margin-left: auto;
+  transform: translateY(200px);
 }
