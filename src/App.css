@@ -47,23 +47,3 @@ body {
   z-index: -1;
   border-radius: 10px;
 }
-
-.page-selector {
-  margin-top: 2rem;
-  margin-left: auto;
-  gap: 2rem;
-  font-size: 2.1rem;
-  transform: translateY(125%);
-  color: inherit;
-  scale: 1;
-}
-
-.page-selector li{
-  transition: all .5s ease-in-out;
-
-}
-
-.page-selector li:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
