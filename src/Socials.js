@@ -4,6 +4,7 @@ import './Socials.css';
 export function Socials() {
   return (
     <>
+    <nav>
         <ul className='social-media'>
           <li className='social-media-item'>
             <a href="https://github.com/AnthonyKeith15" target="_blank" rel="noreferrer"><Icon icon="jam:github" /></a>
@@ -16,6 +17,7 @@ export function Socials() {
             </a>
           </li>
         </ul >
+    </nav>
     </>
   )
 }
