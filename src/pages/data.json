@@ -1,0 +1,26 @@
+[
+  {
+    "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png",
+    "imageAlt": "Screenshot of New Project 4",
+    "title": "New Project 4",
+    "description": "1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed mauris euismod, feugiat urna at, gravida nulla. Nam suscipit velit sed tellus consectetur porttitor.",
+    "githubLink": "",
+    "liveLink": ""
+  },
+  {
+    "imageSrc": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
+    "imageAlt": "Screenshot of NEw project 5",
+    "title": "NEw project 5",
+    "description": "2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed mauris euismod, feugiat urna at, gravida nulla. Nam suscipit velit sed tellus consectetur porttitor.",
+    "githubLink": "",
+    "liveLink": ""
+  },
+  {
+    "imageSrc": "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80",
+    "imageAlt": "Screenshot of Project 3",
+    "title": "Project 3",
+    "description": "3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed mauris euismod, feugiat urna at, gravida nulla. Nam suscipit velit sed tellus consectetur porttitor.",
+    "githubLink": "",
+    "liveLink": ""
+  }
+]
