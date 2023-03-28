@@ -4,6 +4,7 @@ import { Home } from './pages/Home';
 import Projects from './pages/Projects';
 import { PageSelector } from './PageSelector';
 import { Socials } from './Socials';
+import { Footer } from './Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           </Routes>
         </main>
       </div>
+      <Footer />
 
 
     </>
