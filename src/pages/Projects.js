@@ -1,23 +1,74 @@
-import { Route, Routes } from "react-router-dom";
+import React, { Component } from 'react';
+import { Icon } from '@iconify/react';
+import data from './data.json';
+
 import './Projects.css';
 
-export function Projects() {
-  return(
-    <>
-    <div className='hero'>
-    <h1>Projects</h1>
+class Projects extends Component {
+  state = {
+    activeProjectIndex: 0
+  }
 
-    <p>
-    My name is Anthony Keith! As a React deveolper, I strive to create interactive and responsive user interfaces that enhance the browsing experience. Thank you for taking the time to explore my work, and I look forward to the opportunity to collaborate with you in the future.
-    </p>
-    </div>
-    <div className='stats'>
-      <div className='filler'>
-    <h2>Ill display when Projects is up</h2>
-    </div>
-    </div>
+  setActiveProject = (index) => {
+    this.setState({ activeProjectIndex: index });
+  }
 
-    </>
-  )
+  render() {
+    const activeProject = data[this.state.activeProjectIndex];
+
+    return (
+      <>
+        <div className='stats'>
+          <div className='filler'>
+        <div className='project-buttons'>
+          {data.map((project, index) => (
+            <button
+              key={project.title}
+              onClick={() => this.setActiveProject(index)}
+              className={index === this.state.activeProjectIndex ? 'active' : ''}
+            >
+              {project.title}
+            </button>
+          ))}
+        </div>
+          </div>
+        </div>
+        <div className='projects'>
+          {activeProject && <ProjectItem project={activeProject} />}
+        </div>
+      </>
+    );
+  }
 }
+
+export default Projects;
+
+const ProjectItem = ({ project }) => {
+  return (
+    <div className='hero'>
+      <div className='project-image'>
+        <img src={project.imageSrc} alt={project.imageAlt} />
+      </div>
+      <div className='project-details'>
+        <h2>{project.title}</h2>
+        <p>{project.description}</p>
+        <div className='project-links'>
+          {project.githubLink && (
+            <a href={project.githubLink} target='_blank' rel='noopener noreferrer'>
+              <Icon icon='akar-icons:github-fill' />
+              GitHub
+            </a>
+          )}
+          {project.liveLink && (
+            <a href={project.liveLink} target='_blank' rel='noopener noreferrer'>
+              <Icon icon='bx:bxs-show' />
+              Live Demo
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 

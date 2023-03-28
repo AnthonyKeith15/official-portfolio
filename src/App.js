@@ -1,7 +1,7 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { Home } from './pages/Home';
-import { Projects } from './pages/Projects';
+import Projects from './pages/Projects';
 import { PageSelector } from './PageSelector';
 import { Socials } from './Socials';
 
