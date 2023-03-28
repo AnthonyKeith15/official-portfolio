@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
+  transition: all .25 cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 div#root {
@@ -37,10 +38,10 @@ body {
 
 .grounded-radiants::after {
   position: absolute;
-  top: -20px;
-  bottom: -20px;
-  left: -20px;
-  right: -20px;
+  top: -8px;
+  bottom: -8px;
+  left: -8px;
+  right: -8px;
   background: linear-gradient(-40deg, red 0%, orange 15%, black 15% 85%, orange 85%, red 93%);
   content: '';
   z-index: -1;
