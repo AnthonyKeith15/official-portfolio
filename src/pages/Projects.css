@@ -9,12 +9,14 @@ img {
   display: flex;
   flex-direction: column;
   width: 400px;
-  gap: 1rem;
+  gap: 2rem;
+  text-align: center;
 }
 
 .project-details p {
   line-height: 1.5rem;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .project-buttons {

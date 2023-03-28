@@ -6,17 +6,19 @@
 }
 
 :root {
-  --primary-color: #36bdae; /* primary color (blue) */
-  --secondary-color: #c092f3; /* secondary color (var(--text-color)) */
-  --text-color: #ffffff; /* success color (green) */
-  --fill-color: #71a6fd; /* warning color (yellow) */
-  --background-color: #1a1b27; /* error color (var(--primary-color)) */
+  --primary-color: #36adae;
+  --secondary-color: #c092f3;
+  --text-color: #ffffff;
+  --fill-color: #71a6fd;
+  --background-color: #1a1b27;
 }
 div#root {
   height: 100vh;
   width: 90vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  
+  justify-content: space-evenly;
   align-items: center;
   color: var(--text-color);
 }

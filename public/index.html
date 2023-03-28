@@ -9,6 +9,16 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        document.documentElement.style.setProperty('--primary-color', localStorage.getItem('--primary-color') || '#36bdae');
+        document.documentElement.style.setProperty('--secondary-color', localStorage.getItem('--secondary-color') || '#c092f3');
+        document.documentElement.style.setProperty('--text-color', localStorage.getItem('--text-color') || '#ffffff');
+        document.documentElement.style.setProperty('--fill-color', localStorage.getItem('--fill-color') || '#71a6fd');
+        document.documentElement.style.setProperty('--background-color', localStorage.getItem('--background-color') || '#1a1b27');
+      });
+    </script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">   
