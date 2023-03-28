@@ -2,7 +2,7 @@ img {
   height: 225px;
   width: 400px;
   border-radius: 10px;
-  border: 1px solid gray;
+  border: 1px solid var(--text-color);
 }
 
 .project-details {
@@ -28,7 +28,7 @@ img {
 .project-buttons button {
   border: none;
   background-color: transparent;
-  color: #555;
+  color: var(--text-color);
   font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
   font-size: 1.25rem;
   cursor: pointer;
@@ -38,18 +38,18 @@ img {
 }
 
 .project-buttons button:hover {
-  color: #fff;
-  border-bottom: 1px solid orange;
+  color: var(--fill-color);
+  border-bottom: 1px solid var(--secondary-color);
   background-color: transparent;
 }
 
 .project-buttons button.active {
-  border-bottom: 1px solid red;
-  color: gray;
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--text-color);
 }
 .project-buttons button.active:hover {
-  border-bottom: 1px solid red;
-  color: white;
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--fill-color);
 }
 
 .filler.project {
@@ -71,7 +71,7 @@ button.project-button-list{
 }
 
 .project-links svg{
-  fill: white;
+  fill: var(--fill-color);
   height: 50px;
   width: 50px;
 }
@@ -79,8 +79,8 @@ button.project-button-list{
 
 .project-links a {
   text-decoration: none;
-  color: gray;
-  border: 1px solid red;
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
   padding: 5%;
   border-radius: 10px;
   width: 100px;
@@ -88,6 +88,6 @@ button.project-button-list{
 }
 
 .project-links a:hover {
-  color: white;
-  border: 1px solid orange;
+  color: var(--fill-color);
+  border: 1px solid var(--secondary-color);
 }

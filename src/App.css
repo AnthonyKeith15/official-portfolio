@@ -5,17 +5,24 @@
   font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
 }
 
+:root {
+  --primary-color: #36bdae; /* primary color (blue) */
+  --secondary-color: #c092f3; /* secondary color (var(--text-color)) */
+  --text-color: #ffffff; /* success color (green) */
+  --fill-color: #71a6fd; /* warning color (yellow) */
+  --background-color: #1a1b27; /* error color (var(--primary-color)) */
+}
 div#root {
   height: 100vh;
-  width: 80vw;
+  width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: gray;
+  color: var(--text-color);
 }
 
 body {
-  background-color: black;
+  background-color: var(--background-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +32,7 @@ body {
 .grounded-radiants {
   position: relative;
   border-radius: 10px;
-  background: black;
+  background: var(--background-color);
   background-clip: padding-box;
   padding: 1.5rem;
   width: 90%;
@@ -42,7 +49,7 @@ body {
   bottom: -8px;
   left: -8px;
   right: -8px;
-  background: linear-gradient(-40deg, red 0%, orange 15%, black 15% 85%, orange 85%, red 93%);
+  background: linear-gradient(-40deg, var(--primary-color) 0%, var(--secondary-color) 15%, var(--background-color) 15% 85%, var(--secondary-color) 85%, var(--primary-color) 93%);
   content: '';
   z-index: -1;
   border-radius: 10px;

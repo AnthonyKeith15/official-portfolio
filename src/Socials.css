@@ -20,7 +20,7 @@ li.social-media-item {
  list-style: none;
  height: 35px;
  width: 35px;
- fill: gray;
+ fill: var(--text-color);
  transition: all .25s ease-in-out;
 
 }
@@ -37,6 +37,6 @@ path {
 
 li.social-media-item:hover{
   cursor: pointer;
-  fill: white;
-  border-bottom: 1px solid orange;
+  fill: var(--fill-color);
+  border-bottom: 1px solid var(--secondary-color);
 }

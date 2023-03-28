@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Icon } from '@iconify/react';
 import data from '../images/data.json';
 
 import './Projects.css';
