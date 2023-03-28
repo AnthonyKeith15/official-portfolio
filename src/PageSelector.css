@@ -20,12 +20,13 @@ ul.page-selector {
   height: fit-content;
   width: fit-content;
   color: inherit;
+  border-bottom: 1px solid transparent;
   padding: 2px;
 }
 
 .button:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  color: white;
   border-bottom: 1px solid orange;
 }
 
@@ -34,8 +35,9 @@ ul.page-selector {
 }
 
 
+
 .button.button.active:hover {
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid red;
 }
 
 aside{

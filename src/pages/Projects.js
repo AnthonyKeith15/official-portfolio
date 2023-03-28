@@ -19,15 +19,18 @@ class Projects extends Component {
     return (
       <>
         <div className='stats'>
-          <div className='filler'>
+          <div className='filler project'>
         <div className='project-buttons'>
           {data.map((project, index) => (
             <button
               key={project.title}
               onClick={() => this.setActiveProject(index)}
-              className={index === this.state.activeProjectIndex ? 'active' : ''}
+              className={index === this.state.activeProjectIndex ? 'active project-button-list' : 'project-button-list'}
             >
+              <h4 className='project-title'>
+
               {project.title}
+              </h4>
             </button>
           ))}
         </div>

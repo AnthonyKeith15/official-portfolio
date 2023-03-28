@@ -37,6 +37,6 @@ path {
 
 li.social-media-item:hover{
   cursor: pointer;
-  transform: scale(1.3);
+  fill: white;
   border-bottom: 1px solid orange;
 }
