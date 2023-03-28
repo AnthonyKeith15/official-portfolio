@@ -2,18 +2,14 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  text-decoration: none;
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
 }
 
-ul{
-  list-style: none;
-  text-decoration: none;
-  display: flex;
-  padding: 0 1rem;
-  margin-right: 2rem;
-
+nav {
+  margin-bottom: 0.5rem;
 }
 
 .nav a {
@@ -25,7 +21,7 @@ li.social-media-item {
  height: 35px;
  width: 35px;
  fill: gray;
- transition: all .5s ease-in-out;
+ transition: all .25s ease-in-out;
 
 }
 
@@ -42,6 +38,5 @@ path {
 li.social-media-item:hover{
   cursor: pointer;
   transform: scale(1.3);
-
-
+  border-bottom: 1px solid orange;
 }

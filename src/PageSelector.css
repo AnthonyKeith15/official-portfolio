@@ -1,17 +1,24 @@
 
 .page-selector {
-  margin-top: 2rem;
   margin-left: auto;
-  gap: 2rem;
   font-size: 2.1rem;
   transform: translateY(125%);
   color: inherit;
   scale: 1;
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+ul.page-selector {
+  text-align: center;
 }
 
 .button{
   text-decoration: none;
-  transition: all .5s ease-in-out;
+  transition: all .25s ease-in-out;
+  height: fit-content;
+  width: fit-content;
   color: inherit;
   padding: 2px;
 }
@@ -19,8 +26,21 @@
 .button:hover {
   cursor: pointer;
   transform: scale(1.2);
+  border-bottom: 1px solid orange;
 }
 
 .button.active {
   border-bottom: 1px solid red;
+}
+
+
+.button.button.active:hover {
+  border-bottom: 1px solid orange;
+}
+
+aside{
+  position: relative;
+  width: fit-content;
+  margin-left: auto;
+  transform: translateY(200px);
 }

@@ -9,9 +9,8 @@ function App() {
   return (
     <>
       <div className="grounded-radiants">
-          <Socials />
-      <PageSelector />
-
+        <Socials />
+        <PageSelector />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
