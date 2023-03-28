@@ -22,10 +22,28 @@ main p {
 
 main p:hover {
   border-left: 2px solid orange;
+  color: white;
 }
+
+h1:hover {
+  color: white;
+}
+
+h2:hover {
+  color: white;
+}
+
+.filler:hover h2 {
+  color: #fff;
+}
+
 
 .hero {
   min-width: 350px;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .stats {
@@ -76,6 +94,7 @@ main p:hover {
 
 .tech-icon:hover {
   transform: scale(1.2);
+  fill: white
 }
 
 .project-item{
