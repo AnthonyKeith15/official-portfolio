@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Icon } from '@iconify/react';
-import data from './data.json';
+import data from '../images/data.json';
 
 import './Projects.css';
 
@@ -58,14 +58,12 @@ const ProjectItem = ({ project }) => {
         <div className='project-links'>
           {project.githubLink && (
             <a href={project.githubLink} target='_blank' rel='noopener noreferrer'>
-              <Icon icon='akar-icons:github-fill' />
-              GitHub
+            Github
             </a>
           )}
           {project.liveLink && (
             <a href={project.liveLink} target='_blank' rel='noopener noreferrer'>
-              <Icon icon='bx:bxs-show' />
-              Live Demo
+              Live
             </a>
           )}
         </div>
