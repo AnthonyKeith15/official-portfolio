@@ -31,7 +31,7 @@ main p:hover {
 
 
 .hero {
-  min-width: 350px;
+  min-width: 70%;
   max-width: fit-content;
   display: flex;
   flex-direction: column;
@@ -46,6 +46,12 @@ main p:hover {
   width: 35%;
   height: 50%;
   border-radius: 10px;
+}
+
+@media (max-width: 500px) and (max-height: 800px) {
+  .stats {
+    transform: scale(2) translateX(250%) translateY(30%);
+  }
 }
 
 .stats:hover {
