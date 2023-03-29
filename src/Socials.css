@@ -22,7 +22,12 @@ li.social-media-item {
  width: 35px;
  fill: var(--text-color);
  transition: all .25s ease-in-out;
+}
 
+@media (max-width: 420px) {
+  li.social-media-item {
+    transform: translateX(100%);
+  }
 }
 
 svg{

@@ -2,12 +2,25 @@
 .page-selector {
   margin-left: auto;
   font-size: 2.1rem;
-  transform: translateY(125%);
+  transform: translateY(300%);
   color: inherit;
   scale: 1;
   display: flex;
   justify-content: space-evenly;
   width: 40%;
+}
+
+@media (max-height: 900px){
+  .page-selector{
+    font-size: 1.5rem;
+    transform: scale(0.9) translateY(0);
+  }
+}
+
+@media (max-width: 420px) {
+  .page-selector{
+    font-size: .5rem;
+  }
 }
 
 ul.page-selector {
@@ -17,12 +30,18 @@ ul.page-selector {
 .button{
   text-decoration: none;
   transition: all .25s ease-in-out;
-  height: fit-content;
-  width: fit-content;
   color: inherit;
   border-bottom: 1px solid transparent;
   padding: 2px;
+  font-size: 2rem;
 }
+
+@media (max-width: 877px){
+  .button{
+    font-size: 1rem;
+  }
+}
+
 
 .button:hover {
   cursor: pointer;
