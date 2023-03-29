@@ -22,7 +22,7 @@ export function Footer() {
   return (
     <>
       <footer>
-        <p>Change the color scheme:</p>
+        <p>Choose your color scheme!</p>
         <div className="color-picker">
           <label htmlFor="primary-color">Primary Color:</label>
           <input type="color" id="primary-color" name="primary-color" defaultValue="#36bdae" onChange={(e) => {document.documentElement.style.setProperty('--primary-color', e.target.value)}}></input>

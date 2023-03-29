@@ -12,12 +12,13 @@
   --fill-color: #71a6fd;
   --background-color: #1a1b27;
 }
+
 div#root {
   height: 100vh;
   width: 90vw;
   display: flex;
   flex-direction: column;
-  
+
   justify-content: space-evenly;
   align-items: center;
   color: var(--text-color);
@@ -31,13 +32,22 @@ body {
 }
 
 @media (max-width: 500px) and (max-height: 800px) {
-  .grounded-radiants > * {
+  .grounded-radiants>* {
     transform: scale(0.7);
   }
 }
 
+@media (max-width: 600px) and (max-height: 960px) {
+  .grounded-radiants>* {
+    transform: scale(0.7);
+  }
+
+  .stats {
+    display: none;
+  }
 
 
+}
 
 .grounded-radiants {
   position: relative;
@@ -64,4 +74,3 @@ body {
   z-index: -1;
   border-radius: 10px;
 }
-

@@ -33,10 +33,22 @@ main p:hover {
 .hero {
   min-width: 70%;
   max-width: fit-content;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
+}
+
+@media (max-width: 877px){
+  .hero p{
+    overflow: scroll;
+  }
+}
+@media (max-width: 570px) and (max-height: 430px) {
+  .hero p{
+    font-size: 14px;
+  }
 }
 
 .stats {
@@ -53,6 +65,7 @@ main p:hover {
     transform: scale(2) translateX(250%) translateY(30%);
   }
 }
+
 
 .stats:hover {
   background: linear-gradient(-40deg, var(--secondary-color) 0%, var(--primary-color) 15%, var(--background-color) 15% 85%, var(--primary-color) 85%, var(--secondary-color) 93%);
@@ -82,6 +95,7 @@ main p:hover {
   justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
+  overflow: auto;
 }
 
 .tech-icon {
