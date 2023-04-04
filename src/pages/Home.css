@@ -95,7 +95,6 @@ main p:hover {
   justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
-  overflow: auto;
 }
 
 .tech-icon {
