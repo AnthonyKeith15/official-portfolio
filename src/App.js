@@ -8,24 +8,26 @@ import { useState } from 'react';
 
 function App() {
   const [activePage, setActivePage] = useState('Home');
-  const [backgroundColor, setBackgroundColor] = useState('#f87a48');
+  const [backgroundColor, setBackgroundColor] = useState('#5A6FD8');
 
   const handlePageClick = (pageName, buttonColor) => {
     setActivePage(pageName);
     setBackgroundColor(buttonColor);
   }
 
-  const buttonColors = ['#f87a48', '#C70039', '#900C3F', '#581845'];
+  const buttonColors = ['#5A6FD8', '#A6276D', '#6F2DA8', '#581845'];
+  const darkButtonColors = ['#172364', '#531336', '#351551', '#200919'];
+
 
   const buttons = ['Home', 'About', 'Projects', 'Contact'].map((pageName, index) => {
     return (
       <button
         key={pageName}
         id={`button-${index}`}
-        style={{ backgroundColor: buttonColors[index] }}
+        style={{ backgroundColor: darkButtonColors[index] }}
         className={activePage === pageName ? 'active' : ''}
         onClick={() => {
-          handlePageClick(pageName, buttonColors[index]);
+          handlePageClick(pageName, darkButtonColors[index]);
         }}
       >
         <h5>{pageName}</h5>

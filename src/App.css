@@ -47,7 +47,10 @@ main {
   justify-content: center;
   margin: 0 180px 0 0;
   background-color: inherit;
+  font-size: 1.5rem;
 }
+
+
 
 button:not(.active) {
   margin: 0;
