@@ -1,6 +1,6 @@
 function Projects() {
   return (
-    <div id="content">
+    <div id="content" className='animate__animated animate__rotateInUpLeft '>
       <h1>My projects</h1>
       <ul>
         <li>Project A</li>
