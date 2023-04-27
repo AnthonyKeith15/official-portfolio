@@ -1,10 +1,10 @@
+import 'animate.css'
 function Contact() {
-  return (
-    <div id="content">
-      <h1>Contact me</h1>
-      <p>You can reach me at john.doe@example.com.</p>
+  return(
+    <div className='animate__animated animate__rotateInUpLeft' id="content">
+    <h1>Contact me</h1>
     </div>
-  );
+  )
 }
 
-export default Contact;
+export default Contact
