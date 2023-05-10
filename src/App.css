@@ -4,7 +4,7 @@
   font-family: 'Abril Fatface', sans-serif;
   letter-spacing: 1.5px;
   background-color: inherit;
-  color: wheat
+  color: rgb(236, 236, 236)
 }
 button {
   height: 100vh;
@@ -13,7 +13,7 @@ button {
   transform: translateX(0);
   transition: transform .75s cubic-bezier(0.075, 0.82, 0.165, 1);
   border: transparent;
-  border-left: 1px solid black;
+  border-left: 1px solid gray;
   border-radius: 2px;
 }
 

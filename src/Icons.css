@@ -5,3 +5,8 @@ a {
 a:hover {
   fill: white
 }
+
+a svg {
+  height: 40px;
+  width: 40px;
+}

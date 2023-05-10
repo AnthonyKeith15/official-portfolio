@@ -7,9 +7,13 @@ import NavButton from './NavButton.js';
 import { useState } from 'react';
 
 function App() {
+  // Define an array of button colors that correspond to each page
+  const buttonColors = ['#015284', '#2F72B6', '#143C70', '#0091EA'];
+  
+
   // Define the state variables for the active page and background color
   const [activePage, setActivePage] = useState('Home');
-  const [backgroundColor, setBackgroundColor] = useState('#5A6FD8');
+  const [backgroundColor, setBackgroundColor] = useState(buttonColors[0]);
 
   // Define the function that handles a page button click
   const handlePageClick = (pageName, buttonColor) => {
@@ -17,8 +21,6 @@ function App() {
     setBackgroundColor(buttonColor);
   };
 
-  // Define an array of button colors that correspond to each page
-  const buttonColors = ['#5A6FD8', '#A6276D', '#6F2DA8', '#581845'];
 
   // Define an object that maps page names to their corresponding components
   const pages = {
