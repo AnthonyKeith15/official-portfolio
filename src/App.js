@@ -17,7 +17,6 @@ function App() {
   }
 
   const buttonColors = ['#5A6FD8', '#A6276D', '#6F2DA8', '#581845'];
-  const darkButtonColors = ['#172364', '#531336', '#351551', '#200919'];
 
 
   const buttons = ['Home', 'About', 'Projects', 'Contact'].map((pageName, index) => {
@@ -43,7 +42,7 @@ function App() {
     );
   });
   
-
+  // Sets the background color to match the nav bar color.
   const style = {
     backgroundColor: backgroundColor
   }

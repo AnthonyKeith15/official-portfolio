@@ -1,0 +1,7 @@
+#button-0 svg {
+  z-index: 2;
+}
+
+#button-0 svg:hover {
+  fill: white
+}
