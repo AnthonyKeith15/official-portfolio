@@ -1,4 +1,5 @@
-import  Icons  from "./Icons";
+import Icons from "./Icons";
+
 function NavButton({ pageName, buttonColor, activePage, handlePageClick }) {
   return (
     <button

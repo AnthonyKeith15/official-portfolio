@@ -1,6 +1,11 @@
 a {
   z-index: 2;
   fill: rgb(236, 236, 236);
+  margin-top: 60px;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 
@@ -8,4 +13,11 @@ a {
 a svg {
   height: 40px;
   width: 40px;
+  transition: 500ms ease-in-out;
 }
+
+a svg:hover {
+  transform: scale(125%);
+
+}
+

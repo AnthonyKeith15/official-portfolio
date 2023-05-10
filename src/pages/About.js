@@ -1,6 +1,8 @@
-function About() {
+function About({ animationDirection }) {
+
   return (
-    <div id="content" className='animate__animated animate__rotateInUpLeft'>
+    <div className={`animate__animated animate__rotateInUp${animationDirection}`} id="content">
+
       <h1>About me:</h1>
       <p>I'm the kind of person who dives head first into new situations, whether its taking on a new framework, exploring a new city, or trying out a new hobby. I enjoy bold eye-catching colors to create interfaces that stand out and capture the attention of anyone who sees it. When I'm not coding, I indulge in my love for cooking and experimenting with cooking and experimenting with new culinary creations. Prior to my career in tech, I served in the Air Force, where I developed valuable skills such as attention to detail, discipline, and teamwork.</p>
     </div>

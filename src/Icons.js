@@ -4,19 +4,21 @@ import { ReactComponent as LinkedinIcon } from './icons/linkedin.svg'
 import { ReactComponent as ResumeIcon } from './icons/resume.svg'
 
 function Icons() {
+
   return (
-    <>
-      <a href="https://github.com/your-github-username">
+    <div className="icons" >
+      <a href="https://github.com/AnthonyKeith15" target='_blank' title='GitHub' rel="noreferrer">
         <GithubIcon />
       </a>
-      <a href="https://www.linkedin.com/in/your-linkedin-username/">
+      <a href="https://www.linkedin.com/in/anthony-keith/" target='_blank' title='Linked In' rel="noreferrer">
         <LinkedinIcon />
       </a>
-      <a href="/path/to/your/resume.pdf">
+      <a href="https://docs.google.com/document/d/1b4yVqxPpv93BkQFg97vs__qALNOrvfQtKAPoP0tdKjE/edit?usp=sharing" target='_blank' title='Resume' rel="noreferrer">
         <ResumeIcon />
       </a>
-    </>
-  )
+    </div>
+  );
 }
+
 
 export default Icons;

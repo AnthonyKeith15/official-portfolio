@@ -10,24 +10,24 @@ import { useState } from 'react';
 function App() {
   // Define an array of button colors that correspond to each page
   const buttonColors = ['#015284', '#2F72B6', '#143C70', '#0091EA'];
-  
 
-  // Define the state variables for the active page and background color
+  // Define the state variables for the active page, previous page, and background color
   const [activePage, setActivePage] = useState('Home');
+  const [previousPage, setPreviousPage] = useState('Home');
   const [backgroundColor, setBackgroundColor] = useState(buttonColors[0]);
 
   // Define the function that handles a page button click
   const handlePageClick = (pageName, buttonColor) => {
+    setPreviousPage(activePage);
     setActivePage(pageName);
     setBackgroundColor(buttonColor);
   };
 
-
   // Define an object that maps page names to their corresponding components
   const pages = {
     Home: <Home />,
-    About: <About />,
-    Projects: <Projects />,
+    About: <About animationDirection={previousPage === 'Home' ? 'Left' : 'Right'} />,
+    Projects: <Projects animationDirection={previousPage === 'Contact' ? 'Right' : 'Left'} />,
     Contact: <Contact />,
   };
 
