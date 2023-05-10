@@ -1,4 +1,3 @@
-import 'animate.css'
 function Contact() {
   return(
     <div className='animate__animated animate__rotateInUpLeft' id="content">

@@ -1,7 +1,6 @@
-function Projects() {
+function Projects({ animationDirection }) {
   return (
-    <div id="content" className='animate__animated animate__rotateInUpLeft '>
-      <h1>My projects</h1>
+    <div className={`animate__animated animate__rotateInUp${animationDirection}`} id="content">
       <ul>
         <li>Project A</li>
         <li>Project B</li>
