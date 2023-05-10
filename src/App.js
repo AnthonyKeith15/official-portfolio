@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
+import Icons from './Icons.js'
 import { useState } from 'react';
 
 
@@ -24,16 +25,24 @@ function App() {
       <button
         key={pageName}
         id={`button-${index}`}
-        style={{ backgroundColor: darkButtonColors[index] }}
+        style={{ backgroundColor: buttonColors[index] }}
         className={activePage === pageName ? 'active' : ''}
         onClick={() => {
-          handlePageClick(pageName, darkButtonColors[index]);
+          handlePageClick(pageName, buttonColors[index]);
         }}
       >
-        <h5>{pageName}</h5>
+        {pageName === 'Home' ? (
+          <>
+            <h5>{pageName}</h5>
+            <Icons />
+          </>
+        ) : (
+          <h5>{pageName}</h5>
+        )}
       </button>
     );
   });
+  
 
   const style = {
     backgroundColor: backgroundColor
