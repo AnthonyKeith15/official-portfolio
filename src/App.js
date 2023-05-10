@@ -1,4 +1,5 @@
 import './App.css';
+import 'animate.css'
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
