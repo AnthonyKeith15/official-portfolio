@@ -1,0 +1,33 @@
+.home-content#content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.home-content h1, .home-content p {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-content .home-image {
+  margin-left: 4rem;
+  flex-shrink: 0;
+}
+
+.home-image {
+  width: 700px;
+  height: 700px;
+  border-radius: 5px;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 700px;
+  width: 700px;
+}
+
+.home-text h1{
+  text-align: center;
+}
