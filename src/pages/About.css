@@ -1,0 +1,38 @@
+.about-me {
+  position: relative;
+  margin: auto 3rem;
+  width: 75%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 7fr;
+  grid-template-areas:
+    "header header"
+    "span aside";
+}
+
+header,
+span,
+aside {
+  padding: 40px;
+}
+
+header {
+  width: 40%;
+  margin: 2rem auto;
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  border-bottom: 2px solid white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+span {
+  grid-area: span;
+}
+
+aside {
+  grid-area: aside;
+}
