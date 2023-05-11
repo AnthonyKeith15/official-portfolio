@@ -10,7 +10,7 @@ function Icons() {
       <a href="https://github.com/AnthonyKeith15" target='_blank' title='GitHub' rel="noreferrer">
         <GithubIcon />
       </a>
-      <a href="https://www.linkedin.com/in/anthony-keith/" target='_blank' title='Linked In' rel="noreferrer">
+      <a href="https://www.linkedin.com/in/anthony-keith/" target='_blank' title='LinkedIn' rel="noreferrer">
         <LinkedinIcon />
       </a>
       <a href="https://docs.google.com/document/d/1b4yVqxPpv93BkQFg97vs__qALNOrvfQtKAPoP0tdKjE/edit?usp=sharing" target='_blank' title='Resume' rel="noreferrer">

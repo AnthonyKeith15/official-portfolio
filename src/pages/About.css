@@ -8,13 +8,15 @@
   grid-template-rows: 1fr 7fr;
   grid-template-areas:
     "header header"
-    "span aside";
+    "span aside"
+    "tools tools";
 }
 
 header,
 span,
-aside {
-  padding: 40px;
+aside,
+.tools {
+  padding: 50px;
 }
 
 header {
@@ -33,6 +35,44 @@ span {
   grid-area: span;
 }
 
+
 aside {
   grid-area: aside;
 }
+
+span,
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  border: 1px solid white;
+  margin: 30px auto;
+  border-radius: 5px;
+}
+
+span h3,
+aside h3 {
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+span p,
+aside p {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 1.1rem;
+
+}
+
+.tools {
+  grid-area: tools;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.tools h3 {
+  font-size: 2rem;
+}
+
+

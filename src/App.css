@@ -12,8 +12,8 @@ button {
   z-index: 1;
   transform: translateX(0);
   transition: transform .75s cubic-bezier(0.075, 0.82, 0.165, 1);
-  border: transparent;
-  border-left: 1px solid gray;
+  border: 1px solid gray;
+  border-right: transparent;
   border-radius: 2px;
 }
 
