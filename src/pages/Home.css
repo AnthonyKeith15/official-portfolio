@@ -23,11 +23,20 @@
 .home-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  height: 700px;
-  width: 700px;
+  justify-content: space-around;
+  height: 660px;
+  width: 660px;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .home-text h1{
   text-align: center;
+}
+
+.home-text p {
+  line-height: 1.4;
+  font-size: 1.75rem;
+  padding: 20px;
 }
