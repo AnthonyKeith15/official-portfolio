@@ -15,6 +15,7 @@ button {
   border: 1px solid gray;
   border-right: transparent;
   border-radius: 2px;
+  color: wheat;
 }
 
 button.active {
